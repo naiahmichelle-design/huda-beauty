@@ -1,0 +1,134 @@
+/* 1. Estilos generales de la pagina */
+body {
+    font-family: Bebas 'Courier New', Courier, monospace, ; /*Tipo de letra*/
+    margin: 0; /*Margen*/
+    padding: 0;
+    background-color: #000000; /*Color de fondo*/
+    color: #000000; /*Color del texto*/
+}
+
+/* Encabezado (Header) */
+header {
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    color: rgb(246, 96, 181);
+}
+
+/*3. Menú de navegación */
+nav {
+    background-color: #fed5d5; /*Fondo de la barra de menu */
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none; /* Quitar viñetas de la lista */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block; /* pone los elementos en fila, uno al lado del otro */
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgb(12, 9, 9);
+    text-decoration: none; /* Quitar el subrayado del enlace */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /*Subraya el enlace al pasar el mouse*/
+}
+
+/* 4. Contenedor principal */
+.contenedor {
+    display: flex; /* Activa el modo flex */
+    flex-wrap: wraps; /* permite que las filas se adapten segun el tamaño de la pantalla */
+    gap: 20px; /* Espacio entre la seccion y el aside */
+    padding: 20px;
+}
+
+/* 5. Sección principal (columna ancha) */
+.contenedor section {
+    flex: 3;                /* ocupa más espacio que el aside */
+    background-color: rgb(255, 182, 192);
+    padding: 15px;
+    border-radius: 25px;
+}
+/* 6. Aside (columna angosta, contenido secundario) */
+.contenedor aside {
+    flex: 1;                /* ocupa menos espacio que la sección */
+    background-color: #fcdae1;
+    padding: 15px;
+    border-radius: 25px;
+}
+/* 7. Artículos dentro de la sección */
+article {
+    margin-bottom: 20px;
+}
+
+/* 8. Imágenes: que nunca se salgan de su contenedor */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* 9. Tablas */
+table {
+    width: 100%;
+    border-collapse: collapse; /* une los bordes de las celdas */
+    margin-top: 10px;
+}
+th, td {
+    border: 2px solid #e59fb6;
+    padding: 8px;
+    text-align: left;
+
+
+}
+
+th {
+    background-color: rgb(254, 199, 242);
+}
+/* 10. Formulario de contacto */
+form label {
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"] {
+    padding: 5px;
+    width: 200px;
+    margin-top: 5px;
+}
+
+form input[type="submit"] {
+    background-color: rgb(255, 181, 231);
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #edb1c1;
+}
+/* 11. Pie de página (footer) */
+footer {
+    background-color: #e7a6b5;
+    color: #000000;
+    text-align: center;
+    padding: 15px;
+}
+
+footer a {
+    color: rgb(2, 1, 1);
+}
+
+
